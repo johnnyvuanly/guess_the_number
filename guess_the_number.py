@@ -1,4 +1,5 @@
 import random
+play =  True
 
 print('Guess the Number Game')
 
@@ -55,9 +56,15 @@ def main():
 
         if result == correct:
             break
-
-    print(f'Thanks for playing the game! You guessed {counter} times.')
+            print(f'Thanks for playing the game! You guessed {counter} times.')
+           
+        
+    answer = str(input('Would you like to play again (Y/N)')).lower()
+    if answer == "n": 
+        play = False
 
 
 if __name__ == '__main__':
     main()
+
+
